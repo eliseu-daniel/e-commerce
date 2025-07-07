@@ -18,4 +18,10 @@ export const data: Produto[] = [
 		quantity: 3,
 		price: 15,
 	},
+	{
+		order: 3,
+		product: "mouse",
+		quantity: 2,
+		price: 10
+	}
 ];

@@ -1,12 +1,17 @@
 import Button from "./Button";
 
-export default function Summary(){
+type summaryProps = {
+    subtotal: number;
+    frete?: number
+}
+
+export default function Summary({subtotal, frete}: summaryProps){
 return(
     <>
         <h4>Resumo da compra:</h4>
-        <p>Sub-total: </p>
-        <p>Frete: </p>
-        <h5>Total:</h5>
+        <p>Sub-total: {subtotal = subtotal ? subtotal : 0}</p>
+        <p>Frete: {frete = frete ? frete : 0}</p>
+        <h5>Total: {subtotal + frete}</h5>
         <Button tipo="submit" text="FINALIZAR COMPRA" />
     </>
 )

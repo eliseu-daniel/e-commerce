@@ -20,7 +20,7 @@ export default function TableRows({ row }: RowProps) {
 		setQtd((prev) => prev - 1);
 	}
 	
-	const total:number = row.quantity * row.price;
+	const total:number = qtd * row.price;
 	
 
 	return (

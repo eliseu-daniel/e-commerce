@@ -3,6 +3,7 @@ import TableRows from "./TableRow";
 import {data} from "../data/products";
 
 export default function Table() {
+	
 	return (
 		<>
 			<table>
