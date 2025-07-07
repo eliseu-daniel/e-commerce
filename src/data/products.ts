@@ -15,7 +15,7 @@ export const data: Produto[] = [
 	{
 		order: 2,
 		product: "Cabo de força",
-		quantity: 2,
+		quantity: 3,
 		price: 15,
 	},
 ];
