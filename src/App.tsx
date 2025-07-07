@@ -6,7 +6,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<Title />
+			<Title titulo="Carrinho de compras" />
 			<Table />
 		</>
 	);

@@ -1,7 +1,11 @@
-export default function Title() {
+type TitleProps = {
+	titulo: string;
+};
+
+export default function Title({ titulo }: TitleProps) {
 	return (
 		<>
-			<p>Carrinho de compras</p>
+			<h4>{titulo}</h4>
 		</>
 	);
 }
