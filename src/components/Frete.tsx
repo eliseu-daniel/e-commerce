@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import Button from "./Button";
 
-type freteProps = {
+type FreteProps = {
     valor:number;
     setFrete: (valor:number) => void;
 }
 
-export default function Frete({valor, setFrete}:freteProps){
+export default function Frete({valor, setFrete}:FreteProps){
     useEffect(() => {
         setFrete(valor);
     }, [valor, setFrete]);

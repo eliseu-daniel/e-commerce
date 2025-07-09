@@ -1,11 +1,11 @@
 import Button from "./Button";
 
-type summaryProps = {
+type SummaryProps = {
     subtotal: number;
     frete: number
 }
 
-export default function Summary({subtotal, frete}: summaryProps){
+export default function Summary({subtotal, frete}: SummaryProps){
 return(
     <>
         <h4>Resumo da compra:</h4>

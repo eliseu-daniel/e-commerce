@@ -4,11 +4,11 @@ import {data} from "../data/products";
 import { useMemo, useState } from "react";
 import Button from "./Button";
 
-type tableProps = {
+type TableProps = {
 	totalGeral: (total:number) => void;
 }
 
-export default function Table({totalGeral}: tableProps) {
+export default function Table({totalGeral}: TableProps) {
 	// const [qtd, setQtd] = useState<number>(1);
 
 	const [qtd, setQtd] = useState<{ [key: number]: number }>(
@@ -43,7 +43,7 @@ export default function Table({totalGeral}: tableProps) {
 	const decrement = (order: number) => {
     	setQtd((prev) => ({
       		...prev,
-      		[order]: prev[order] > 1 ? prev[order] - 1 : 1,
+      		[order]: prev[order] > 1 ? prev[order] - 1 : 0,
     	}));
   	};
 
